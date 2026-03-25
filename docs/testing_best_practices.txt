@@ -1,0 +1,20 @@
+## Boas práticas de testes unitários em Python
+
+### Fundamentos
+- Testes devem ser rápidos, isolados e determinísticos
+- Cada teste deve validar apenas um comportamento
+- Evite dependência entre testes
+- Testes devem rodar em qualquer ambiente
+- Testes são documentação viva do código
+
+### Benefícios
+- Aumenta confiança no refatoramento
+- Detecta regressões rapidamente
+- Melhora design do código
+- Facilita debugging
+
+### Nomenclatura
+- Teste: test_<recurso>_<comportamento>
+- Exemplos: test_soma_numeros_positivos, test_lista_vazia_retorna_erro
+- Classes: TestNomeClasse
+- Métodos: test_descricao_do_teste

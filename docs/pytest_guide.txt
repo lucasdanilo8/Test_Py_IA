@@ -1,0 +1,31 @@
+## Guia Pytest
+
+### Estrutura básica
+- Nomeie testes como: test_*.py
+- Use funções pequenas e focadas
+- Separe setup, execução e validação (AAA pattern)
+
+### Padrão AAA (Arrange-Act-Assert)
+1. Arrange: Prepare dados e contexto
+2. Act: Execute a função
+3. Assert: Valide o resultado
+
+### Fixtures (setup/teardown)
+- Use @pytest.fixture para reutilizar setup
+- Escopo: function, class, module, session
+- Exemplo:
+  @pytest.fixture
+  def cliente():
+      return Client()
+
+### Executar testes
+- pytest                    # Todos os testes
+- pytest -v                # Modo verbose
+- pytest -q                # Modo quiet
+- pytest test_file.py      # Arquivo específico
+- pytest -k "nome_teste"   # Por padrão de nome
+- pytest --tb=short        # Traceback curto
+
+### Cobertura
+- pip install pytest-cov
+- pytest --cov=meu_modulo

@@ -1,0 +1,46 @@
+## Padrões de Testes
+
+### Casos normais
+- Teste entradas válidas esperadas
+- Teste múltiplos cenários de uso comum
+- Valide saídas corretas
+
+### Edge cases
+- Valores nulos (None)
+- Strings vazias
+- Listas vazias
+- Números negativos
+- Valores extremos
+- Valores duplicados
+- Strings muito longas
+
+### Testes de erro
+- Use pytest.raises para exceções
+- Valide mensagens de erro
+- Teste condições de erro específicas
+
+Exemplo:
+```
+with pytest.raises(ValueError):
+    funcao_invalida()
+```
+
+### Parametrização
+- Use @pytest.mark.parametrize para reduzir duplicação
+- Melhora legibilidade e cobertura
+
+Exemplo:
+```
+@pytest.mark.parametrize("a,b,resultado", [
+    (1, 2, 3),
+    (0, 0, 0),
+    (-1, 1, 0)
+])
+def test_soma(a, b, resultado):
+    assert soma(a, b) == resultado
+```
+
+### Mocks e patches
+- Use unittest.mock para isolar dependências
+- Mock APIs externas, banco de dados
+- Valide que mocks foram chamados corretamente

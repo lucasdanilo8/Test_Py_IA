@@ -1,0 +1,11 @@
+# Dependências para pipeline RAG com Groq (gratuito)
+langchain
+langchain-community
+langchain-text-splitters
+faiss-cpu
+sentence-transformers
+pytest
+groq
+streamlit
+langgraph
+python-dotenv

@@ -1,0 +1,28 @@
+## Diretrizes Python
+
+### Estilo de código
+- Siga PEP 8
+- Use snake_case para funções e variáveis
+- Use UPPER_CASE para constantes
+- Use CamelCase para classes
+
+### Type hints
+- Use type hints para melhor legibilidade
+- Exemplo: def soma(a: int, b: int) -> int:
+
+### Documentação
+- Use docstrings para funções importantes
+- Use """ para docstrings multi-linha
+- Documente parâmetros e retorno
+
+### Melhorias de código
+- Funções pequenas e focadas (< 30 linhas)
+- Máximo 3 níveis de indentação
+- Reduza complexidade cíclica
+- Evite variáveis globais
+- Use context managers (with) para recursos
+
+### Segurança
+- Valide entradas sempre
+- Tratamento adequado de exceções
+- Não exponha informações sensíveis em logs
